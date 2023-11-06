@@ -31,8 +31,8 @@ return {
           offsetEncoding = { "utf-16" },
         },
         cmd = {
-          "/opt/clang/bin/clangd",
-          "--background-index",
+          "clangd",
+          "--background-index=false",
           "--clang-tidy",
           "--header-insertion=iwyu",
           "--completion-style=detailed",
