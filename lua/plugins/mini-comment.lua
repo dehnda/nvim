@@ -11,12 +11,10 @@ return {
       "JoosepAlviste/nvim-ts-context-commentstring",
     },
     opts = {
-      context_commentstring = {
-        enable = true,
-        enable_autocmd = false,
-        config = {
-          cpp = "// %s",
-        },
+      enable = true,
+      enable_autocmd = false,
+      config = {
+        cpp = "// %s",
       },
     },
   },
