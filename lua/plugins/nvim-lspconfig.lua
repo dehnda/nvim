@@ -32,17 +32,21 @@ return {
         },
         cmd = {
           "clangd",
+          "-j=4",
           "--background-index=false",
           "--clang-tidy",
           "--header-insertion=iwyu",
           "--completion-style=detailed",
           "--function-arg-placeholders",
           "--fallback-style=llvm",
+          "--malloc-trim",
+          "--pch-storage=disk",
         },
         init_options = {
           usePlaceholders = true,
           completeUnimported = true,
           clangdFileStatus = true,
+
         },
       },
     },
